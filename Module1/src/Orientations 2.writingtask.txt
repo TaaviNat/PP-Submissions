@@ -1,0 +1,30 @@
+Variability:
+
+Customer Arrival Patterns: In a bank, the arrival of customers may follow different patterns (e.g., peak hours, lunchtime rushes, or random arrivals).
+
+Transaction Types: Various types of transactions, such as deposits, withdrawals, account inquiries, and loan applications, exhibit variability in terms of frequency and complexity.
+
+Service Times: The time it takes to serve each customer may vary based on the type of transaction, the efficiency of bank staff, and other factors.
+
+Staff Availability: The number of available bank tellers and their expertise can change during the day, leading to variability in service quality.
+
+Complexity:
+
+Customer Behavior: Customers exhibit complex behaviors, making decisions about the type of transactions they need and their level of patience when waiting in line.
+
+Transaction Handling: The processing of transactions can be complex due to factors like verifying account information, fund availability, and regulatory requirements.
+
+Security and Compliance: Banks must adhere to complex regulatory and security measures, which add complexity to the simulation.
+
+Resource Allocation: Allocating resources (staff, ATMs, etc.) to meet customer demand adds another layer of complexity.
+
+
+Interconnectedness:
+
+Customer Interactions: Customers may interact with each other (e.g., queuing in line) and with bank staff, creating interdependencies.
+
+Resource Allocation: The availability of staff and resources depends on customer demand, and vice versa.
+
+Feedback Loops: Customer satisfaction or dissatisfaction can lead to feedback loops affecting future behaviors and staff responses.
+
+Data Flow: Information flows between customers, staff, and the bank's database systems, creating interconnected data pathways.
