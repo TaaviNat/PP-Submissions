@@ -1,5 +1,4 @@
 import java.util.LinkedList;
-import java.util.concurrent.LinkedBlockingDeque;
 
 public class ServicePoint {
     private LinkedList<Customer> queue;
