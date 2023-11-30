@@ -1,0 +1,152 @@
+1.4 writing tasks
+
+1.
+
+Throughput:
+
+Meaning: Patients treated per simulated day.
+Characterization: Average number of patients treated.
+
+Utilization:
+
+Meaning: Proportion of time doctors are treating patients.
+Characterization: Percentage of time doctors are active.
+Response Time:
+
+Meaning: Time from patient arrival to treatment completion.
+Characterization: Average response time for patients.
+
+Quality of Service (QoS):
+
+Meaning: Patient satisfaction with treatment and facilities.
+Characterization: Measure satisfaction based on waiting time, treatment effectiveness, and communication.
+
+Scalability:
+
+Meaning: System's ability to handle increased patient load.
+Characterization: Test system performance with gradually increased patient numbers.
+
+Reliability:
+
+Meaning: Consistent performance without failures.
+Characterization: Introduce unexpected events (e.g., emergencies) to test adaptability.
+
+2.
+Service Points
+Customer Interactions
+Transaction Processing
+Resource Allocation
+Feedback and Surveys
+Technology Infrastructure
+Compliance and Quality Standards
+Operational Processes
+
+3.
+
+Coffee Shop System:
+
+Service Points:
+
+Order Counter
+Coffee Making Station
+Payment Counter
+
+   -----------------------------
+   |     Order Counter         |
+   |                           |
+   |  Customer Places Order    |
+   |  Staff Takes Order        |
+   -----------------------------
+              |
+              v
+   -----------------------------
+   | Coffee Making Station    |
+   |                           |
+   | Barista Prepares Coffee   |
+   |                           |
+   -----------------------------
+              |
+              v
+   -----------------------------
+   |   Payment Counter         |
+   |                           |
+   | Customer Pays for Order   |
+   | Staff Processes Payment   |
+   -----------------------------
+              |
+   -----------------------------
+   |  Seating Area Assistance  |
+   |                           |
+   | Staff Guides to Seating   |
+   | Optional Assistance       |
+   -----------------------------
+
+Public Transportation System:
+
+Service Points:
+
+Ticketing Kiosk
+Platform Entrance/Gate
+Customer Information Desk
+
+   -----------------------------
+   |     Ticketing Kiosk       |
+   |                           |
+   |  Customer Buys Ticket     |
+   | Kiosk Dispenses Ticket    |
+   -----------------------------
+              |
+              v
+   -----------------------------
+   | Platform Entrance/Gate   |
+   |                           |
+   | Customer Validates Ticket |
+   | Access to Platform        |
+   -----------------------------
+              |
+              v
+   -----------------------------
+   | Customer Information Desk|
+   |                           |
+   | Assistance and Information |
+   | Queries and Guidance      |
+   -----------------------------
+              |
+   -----------------------------
+   |  Lost and Found Counter   |
+   |                           |
+   | Retrieve Lost Items       |
+   | Customer Claims           |
+   -----------------------------
+
+4.
+
+Initialize Simulation
+
+// Phase 1: Warm-up
+for each warm-up iteration
+    Generate Arrival Event
+    Process Event
+end for
+
+// Phase 2: Data Collection
+for each data collection iteration
+    Generate Arrival Event
+    Process Event
+    Collect Data
+end for
+
+// Phase 3: Analysis
+for each analysis iteration
+    Generate Arrival Event
+    Process Event
+    Analyze Data
+end for
+
+End Simulation
+
+5.
+
+A-Phase: Initialization and stabilization of the system.
+B-Events: Simulating events for data collection.
+C-Events: Simulating events for data analysis and drawing conclusions.

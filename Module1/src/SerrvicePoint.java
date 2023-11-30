@@ -1,10 +1,10 @@
 import java.util.LinkedList;
 
-public class ServicePoint {
+public class SerrvicePoint {
     private LinkedList<Customer> queue;
     private int customerServed;
     private long serviceTimeSum;
-    public ServicePoint() {
+    public SerrvicePoint() {
         queue = new LinkedList<>();
         customerServed = 0;
         serviceTimeSum = 0;

@@ -3,43 +3,42 @@ import java.util.PriorityQueue;
 import java.util.Random;
 
 public class EventList {
-    private PriorityQueue<Event> eventList;
+    private PriorityQueue<Event> evenList;
 
     public EventList() {
-        eventList = new PriorityQueue<>();
+        evenList = new PriorityQueue<>();
     }
 
     public void add(Event e) {
-        System.out.println("Adding to the event list " + e.getType() + " " + e.getTime());
-        eventList.add(e);
+        System.out.printf(" Adding to the event list %s %.2f\n", e.getType(), e.getTime());
+        evenList.add(e);
     }
 
     public Event remove() {
-        if (eventList.isEmpty()) {
+        if (evenList.isEmpty())
             return null;
-        }
-        System.out.println("Removing from the event list " + eventList.peek().getType() + " " +  eventList.peek().getTime());
-        return eventList.remove();
+
+        System.out.printf(" Removing from the event list %s %.2f", evenList.peek().getType(), evenList.peek().getTime());
+        return evenList.remove();
     }
 
     public double getNextEventTime() {
-        if (eventList.isEmpty()) {
+        if (evenList.isEmpty())
             return 0;
-        }
-        return eventList.peek().getTime();
+        return evenList.peek().getTime();
     }
 
     public void print() {
-        Object[] tmp = eventList.toArray();
+        Object[] tmp = evenList.toArray();
         Arrays.sort(tmp);
-        for (Object e : tmp) {
+        for (Object e : tmp)
             System.out.println(e);
-        }
     }
 
     public static void main(String[] args) {
         EventList eventList = new EventList();
         Random random = new Random();
+
         // generate events
         for (int i = 0; i < 10; i++) {
             EventType type;
@@ -51,10 +50,9 @@ public class EventList {
         }
 
         // remove the first event to be processed
-        System.out.println("Event removed " + eventList.remove());
+        System.out.println("Event removed: " + eventList.remove());
 
         // finally print the whole event list
         eventList.print();
-
     }
 }

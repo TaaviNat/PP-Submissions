@@ -1,7 +1,7 @@
 public class CustomerGenerator {
-    public CustomerGenerator(ServicePoint servicePoint) {
+    public CustomerGenerator(SerrvicePoint serrvicePoint) {
         for (int i = 0; i < 10; i++) {
-            servicePoint.addCustomer(new Customer());
+            serrvicePoint.addCustomer(new Customer());
         }
     }
 

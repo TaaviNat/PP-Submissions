@@ -1,12 +1,12 @@
 public class Main {
     public static void main(String[] args) {
         System.out.println("Basic Queue/ServicePoint simulator");
-        ServicePoint servicePoint = new ServicePoint();
+        SerrvicePoint serrvicePoint = new SerrvicePoint();
 
-        new CustomerGenerator(servicePoint);
-        servicePoint.serve();
+        new CustomerGenerator(serrvicePoint);
+        serrvicePoint.serve();
 
-        System.out.println("Average service time " + servicePoint.avgServiceTime());
+        System.out.println("Average service time " + serrvicePoint.avgServiceTime());
 
     }
 }
